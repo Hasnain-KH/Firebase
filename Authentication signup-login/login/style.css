@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: rgb(62, 62, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 420px;
+  height: 370px;
+  border-radius: 10px;
+  background-color: rgb(194, 185, 185);
+  box-shadow: 3px 2px 3px 2px rgb(0, 0, 0);
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  color: rgb(243, 243, 243);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 50px;
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+.contchild {
+  margin-top: 5px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+label {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(5, 5, 5);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+input {
+  width: 320px;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+input:focus {
+  background-color: rgb(206, 202, 202);
+}
+#log h1 {
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.login {
+  margin-top: 40px;
+  color: rgb(117, 84, 84);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 20px;
+  font-weight: bolder;
+  margin-left: -66px;
+  font-size: 17px;
+}
+
+.login button {
+  width: 110px;
+  height: 37px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(94, 90, 71);
+  color: white;
+  margin-top: 0px;
+}
