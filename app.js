@@ -8,20 +8,19 @@ let signup = document.getElementById("signup");
 
 signup.addEventListener("click", () => {
 
+    let emailvalue = email.value;
+    let passwordvalue = password.value;
 
-    createUserWithEmailAndPassword(auth, email.value, password.value)
+    createUserWithEmailAndPassword(auth, emailvalue, passwordvalue)
         .then((resp) => {
             const user = resp.user;
             console.log(user);
             location.href = "login/login.html";
         })
-
-
         .catch((error) => {
             const errorcode = error.code;
             const errorMessege = error.errorMessege;
-            console.log("Error code" + errorcode);
-            console.log("Error messege " + errorMessege);
+            alert("atleast 6 digits are required ")
         })
 
 })
