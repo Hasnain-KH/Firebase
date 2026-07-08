@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,6 +32,146 @@
         </div>
       </div>
     </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMIT · Auth</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- SweetAlert2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="auth-wrapper">
+      <div class="auth-card">
+        <!-- Brand -->
+        <div class="brand">
+          <div class="logo-circle">
+            <img src="assets/Smit.jpg" alt="SMIT" />
+          </div>
+          <h1>SMIT Portal</h1>
+          <p>Secure · Modern · Fast</p>
+        </div>
+
+        <!-- Toggle Buttons -->
+        <div class="toggle-bar">
+          <button
+            id="toggleSignup"
+            class="toggle-btn active"
+            data-form="signup"
+          >
+            <i class="fas fa-user-plus"></i> Sign Up
+          </button>
+          <button id="toggleLogin" class="toggle-btn" data-form="login">
+            <i class="fas fa-sign-in-alt"></i> Log In
+          </button>
+        </div>
+
+        <!-- ========== SIGN UP FORM ========== -->
+        <form id="signupForm" class="auth-form active">
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              id="signupName"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-user-friends"></i>
+            <input
+              type="text"
+              id="signupFather"
+              placeholder="Father's Name"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="email"
+              id="signupEmail"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              id="signupPassword"
+              placeholder="Password (min 6 chars)"
+              required
+            />
+          </div>
+          <div id="signupError" class="form-error"></div>
+          <button type="submit" id="signupBtn">
+            <span>Create Account</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <!-- ========== LOGIN FORM ========== -->
+        <form id="loginForm" class="auth-form">
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="email"
+              id="loginEmail"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div id="loginError" class="form-error"></div>
+          <button type="submit" id="loginBtn">
+            <span>Log In</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Firebase SDKs (modular) -->
+    <script type="importmap">
+      {
+        "imports": {
+          "firebase/app": "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js",
+          "firebase/auth": "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js",
+          "firebase/firestore": "https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js"
+        }
+      }
+    </script>
+
     <script type="module" src="app.js"></script>
   </body>
 </html>
