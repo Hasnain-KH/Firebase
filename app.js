@@ -335,7 +335,7 @@ loginForm.addEventListener('submit', async (e) => {
         }
 
         // Redirect to dashboard (uncomment when ready)
-        window.location.href = "dashboard.html";
+        window.location.href = "dashboard/dashboard.html";
 
     } catch (error) {
         console.error(error);
