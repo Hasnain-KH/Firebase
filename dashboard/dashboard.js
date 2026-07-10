@@ -42,10 +42,10 @@ form.addEventListener("submit", function (e) {
 
 
 
-  if (name === "" || email === "" || phoneNumber === "" || message === "") {
-    alert("'⚠️ Please fill all fields before sending.'");
-    return;
-  }
+  // if (name === "" || email === "" || phoneNumber === "" || message === "") {
+  //   alert("'⚠️ Please fill all fields before sending.'");
+  //   return;
+  // }
 
 
   const fullMessage = `
