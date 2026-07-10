@@ -103,9 +103,6 @@ signupForm.addEventListener('submit', async (e) => {
         setActiveForm('login');
         signupForm.reset();
 
-        // If you want to redirect to a separate page, use this instead:
-        // window.location.href = "login.html"; // or "dashboard.html"
-
     } catch (error) {
         console.error(error);
         if (error.code === 'auth/email-already-in-use') {
